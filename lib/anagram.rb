@@ -10,10 +10,11 @@ def initialize(word)
 end
 
 def match(word_array)
+  w = @word.split(//)
+  w = w.sort
   word_array.each do |i|
     ii = i.split(//)
-    ww = @word.split(//)
-    if (ii.sort == ww.sort) == true
+    if ii.sort == w
       @@all << i
     end
   end
