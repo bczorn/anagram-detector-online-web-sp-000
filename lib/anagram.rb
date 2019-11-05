@@ -3,7 +3,7 @@
 class Anagram
 
 attr_accessor 
-@@all
+@@all = []
 
 def initialize(word)
   @word = word
@@ -14,8 +14,9 @@ def match(word_array)
     ii = i.split(//)
     ww = @word.split(//)
     if ii.sort == ww.sort
-      return i
+      @@all << i
     end
   end
+  return @@all
 end
 end
