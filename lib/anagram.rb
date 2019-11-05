@@ -13,7 +13,7 @@ def match(word_array)
   word_array.each do |i|
     ii = i.split(//)
     ww = @word.split(//)
-    if ii.sort == ww.sort
+    if (ii.sort == ww.sort) == true
       @@all << i
     end
   end
