@@ -11,10 +11,9 @@ end
 
 def match(word_array)
   word_array.each do |i|
-    ii = i.split(//).sort
-    ww = @word.split(//).sort
-    if ii == ww
-      @@all << i 
+    ii = i.split(//)
+    ww = @word.split(//)
+    if ii.sort == ww.sort
       return i
     end
   end
