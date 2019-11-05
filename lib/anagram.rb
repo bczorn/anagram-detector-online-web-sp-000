@@ -18,5 +18,5 @@ def match(word_array)
       return i
     end
   end
-  
+end
 end
